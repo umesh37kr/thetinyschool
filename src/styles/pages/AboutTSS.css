@@ -1,0 +1,152 @@
+.about-section{
+    margin: 20px 20px;
+}
+
+.principal-div{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    column-gap: 30px;
+    margin-left: 20px;
+}
+
+.principal-message h2{
+    font-size: 24px;
+    font-weight: 600;
+    position: relative;
+}
+.principal-message h2::before{
+    content: "";
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    top:35px;
+    left: 0;
+    background-color: #ff4e31;
+    display: block;
+    text-align: center;
+    background: #ff4e31;
+}
+.principal-message h2::after{
+    content: ""; 
+    position: absolute;
+    display: block;
+    width: 150px;
+    height: 2px;
+    margin: 0 auto;
+    top: 41px;
+    margin-bottom: 20px;
+    left: 2px;
+    text-align: center;
+    background: #ff4e31;
+}
+
+.principal-message p{
+    margin-top: 30px;
+    line-height: 27px;
+    font-size: 15px;
+    font-family: "courier";
+}
+
+.principal-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.principal-image img{
+    width: 70%;
+    border-radius: 10px;
+}
+
+/* mission section */
+.mission-section{
+    padding: 20px 20px;
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+}
+.vision{
+    margin-left: 20px;
+}
+.vision h2{
+    font-size: 24px;
+    font-weight: 600;
+    position: relative;
+}
+.vision h2::before{
+    content: "";
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    top:35px;
+    left: 0;
+    background-color: #ff4e31;
+    display: block;
+    text-align: center;
+    background: #ff4e31;
+}
+.vision h2::after{
+    content: ""; 
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 2px;
+    margin: 0 auto;
+    top: 41px;
+    margin-bottom: 20px;
+    left: 2px;
+    text-align: center;
+    background: #ff4e31;
+}
+.vision p{
+    margin-top: 30px;
+    line-height: 30px;
+    font-size: 15px;
+    font-family: "courier";
+    color: black;
+}
+
+.mission h2{
+    font-size: 24px;
+    font-weight: 600;
+    position: relative;
+}
+.mission h2::before{
+    content: "";
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    top:35px;
+    left: 0;
+    background-color: #ff4e31;
+    display: block;
+    text-align: center;
+    background: #ff4e31;
+}
+.mission h2::after{
+    content: ""; 
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 2px;
+    margin: 0 auto;
+    top: 41px;
+    margin-bottom: 20px;
+    left: 2px;
+    text-align: center;
+    background: #ff4e31;
+}
+.mission ul{
+   margin-top: 30px; 
+}
+.mission ul li{
+    padding: 3px;
+    font-family: "courier";
+ }
+ .mission ul li span{
+    margin-right: 5px;
+    color: red;
+ }

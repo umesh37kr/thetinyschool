@@ -1,0 +1,7 @@
+.events-gallery{
+    background-color: rgb(225, 225, 225);
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

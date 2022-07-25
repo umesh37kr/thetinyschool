@@ -1,0 +1,281 @@
+/* welcome home section */
+.home-welcome{
+    padding: 50px;
+    background-color: aliceblue;
+}
+
+.home-welcome h2{
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', serif;
+    line-height: 1.2em;
+    text-transform: none;
+    font-weight: 600;
+    letter-spacing: .05rem;
+}
+
+.home-welcome h4{
+    color: #e54c2a;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.home-welcome h4::before{
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    top:25px;
+    left:50%;
+    background-color: #ff4e31;
+    display: block;
+    /* position: relative; */
+    text-align: center;
+    background: #ff4e31;
+}
+.home-welcome h4::after{
+    content: ""; 
+    position: absolute;
+    display: block;
+    width: 200px;
+    height: 2px;
+    margin: 0 auto;
+    top: 32px;
+    margin-bottom: 20px;
+    left: 42%;
+    text-align: center;
+    background: #ff4e31;
+}
+.home-welcome p{
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    text-align: center;
+    font-weight: 400;
+}
+
+/* school profile section */
+.school-profile{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px;
+    column-gap: 50px;
+    background-color: #f4f8f1;
+}
+
+.school-profile-text h2{
+    font-size: 20px;
+    color: #ff4e31;
+}
+
+.school-profile-text p{
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    text-align: left;
+    font-weight: 400;
+}
+
+/* school gallery section */
+.school-gallery{
+    padding: 30px;
+    /* background-color: aliceblue; */
+}
+
+.school-gallery h2{
+    text-align: center;
+    margin-bottom: 35px;
+    position: relative;
+}
+.school-gallery h2::before{
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    top:35px;
+    left:50%;
+    background-color: #ff4e31;
+    display: block;
+    text-align: center;
+    background: #ff4e31;
+}
+.school-gallery h2::after{
+    content: ""; 
+    position: absolute;
+    display: block;
+    width: 150px;
+    height: 2px;
+    margin: 0 auto;
+    top: 42px;
+    margin-bottom: 20px;
+    left: 44%;
+    text-align: center;
+    background: #ff4e31;
+}
+
+/* news and update section */
+.news-update{
+    padding: 30px;
+    background-color: bisque;
+    max-height: 80vh;
+    overflow:auto;
+}
+.news-update h2{
+    text-align: center;
+    margin-bottom: 35px;
+    position: relative;
+}
+.news-update h2::before{
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    top:35px;
+    left:50%;
+    background-color: #ff4e31;
+    display: block;
+    text-align: center;
+    background: #ff4e31;
+}
+.news-update h2::after{
+    content: ""; 
+    position: absolute;
+    display: block;
+    width: 150px;
+    height: 2px;
+    margin: 0 auto;
+    top: 42px;
+    margin-bottom: 20px;
+    left: 44%;
+    text-align: center;
+    background: #ff4e31;
+}
+.newsList{
+    margin-left: 100px;
+}
+
+.newsList tr td{
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+}
+.newsList span {
+    font-size: 22px;
+    padding-right: 10px;
+}
+
+/* mediaquery for tablets and ipads*/
+@media (min-width: 769px) and (max-width: 1023px) {
+    /* school profile section */
+    .school-profile{
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items:  center;
+        row-gap: 20px;
+    }
+    .school-profile-text{
+        grid-row: 1/2;
+    }
+    .school-profile-text{
+        grid-row: 1/2;
+    }
+    .school-profile-text h2{
+        text-align: center;
+    }
+   /* news and update section */
+    .newsList{
+        margin-left: 50px;
+    }
+    .school-profile-youtube .youtube{
+        width: 450;
+    }
+}
+
+/* media query for mobile*/
+@media (max-width: 768px) {
+    .home-welcome{
+        padding: 25px 25px;
+    }
+    .home-welcome p{
+        text-align: justify;
+    }
+    /* school profile section */
+    .school-profile{
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items:  center;
+        row-gap: 20px;
+        padding: 25px 20px;
+        column-gap: 0px;
+    }
+    .school-profile-text{
+        grid-row: 1/2;
+    }
+    .school-profile-text{
+        grid-row: 1/2;
+    }
+    .school-profile-text h2{
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 1px;
+    }
+    .school-profile-text p{
+        padding: 0 10px;
+        text-align: justify;
+    }
+    .school-profile-youtube .youtube{
+        width: 200;
+    }
+       /* news and update section */
+       .newsList{
+        margin-left: 5px;
+    }
+
+    .news-update h2::after{
+        left: 38%;
+    }
+    .school-gallery h2::after{
+        left: 38%;
+    }
+    .home-welcome h4::after{
+        left: 34%;
+    }
+}
+/* reponsive for only profile youtube video */
+@media (max-width: 590px) {
+.school-profile-youtube .youtube{
+    width: 100%;
+}
+}
+@media (max-width: 468px) {
+    .home-welcome h4::after{
+        left: 25%;
+    }
+    .home-welcome p{
+        text-align: justify;
+    }
+    .school-profile-text h2{
+        text-align: center;
+    }
+    /* news and update section */
+    .newsList tr td {
+        padding: 2px 0px;
+    }
+    .news-update h2::after{
+        left: 30%;
+    }
+    .school-gallery h2::after{
+        left: 30%;
+    }
+  }
