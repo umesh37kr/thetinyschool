@@ -12,6 +12,7 @@ const Login = () => {
     <div className='events-gallery'>
       <img src="images/page-under-construction.jpg" alt="admission closed" />
     </div>
+    {/* <form action=""></form> */}
     <Footer />
     </>
   )
