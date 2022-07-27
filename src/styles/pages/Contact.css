@@ -149,3 +149,41 @@ form-group{
     font-size: 20px;
 
 }
+/* mediaquery for tablets and ipads*/
+@media (min-width: 669px) and (max-width: 1023px) {
+    .contact-list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .form-wrapper{
+        grid-template-columns: 1fr;
+    }
+    .feedback-form {
+        margin-left: 0px;
+        padding-bottom: 20px;
+    }
+    .getintouch h2::after{
+        left: 245px;
+    }
+}
+
+/* media query for mobile*/
+@media (max-width: 668px) {
+    .contact-list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .form-wrapper{
+        grid-template-columns: 1fr;
+    }
+    .feedback-form {
+        margin-left: 0px;
+        padding-bottom: 20px;
+    }
+    .getintouch h2::after{
+        left: 200px;
+    }
+}
+@media (max-width: 398px) {
+    .getintouch h2::after{
+        left: 0;
+    }
+}

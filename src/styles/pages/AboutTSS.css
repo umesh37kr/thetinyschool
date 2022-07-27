@@ -150,3 +150,43 @@
     margin-right: 5px;
     color: red;
  }
+
+/* mediaquery for tablets and ipads*/
+@media (min-width: 769px) and (max-width: 1023px) {
+    .principal-div{
+        grid-template-columns: 1fr;
+    }
+    .principal-message{
+        grid-row: 1/2;
+    }
+}
+
+/* media query for mobile*/
+@media (max-width: 668px) {
+    .principal-div{
+        grid-template-columns: 1fr;
+    }
+    .principal-message{
+        grid-row: 1/2;
+    }
+    .principal-message h2::before{
+        top: 55px;
+    }
+    .principal-message h2::after{
+        top: 60px;
+    }
+    .mission-section{
+        grid-template-columns: 1fr;
+    }
+    .vision{
+        margin-left: 0;
+    }
+}
+@media (max-width: 398px) {
+    .principal-message h2::before{
+        top: 85px;
+    }
+    .principal-message h2::after{
+        top: 90px;
+    }
+}

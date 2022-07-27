@@ -1,5 +1,5 @@
 import React from 'react'
-
+import '../styles/components/components.css'
 const PageHeader = (props) => {
   console.log(props.name)
   return (
